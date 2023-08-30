@@ -17,8 +17,8 @@ async function post(parent, args, context, info) {
       postedBy
     }
   });
-
-  context.pubsub.publish('NEW_LINK', newLink);
+  
+  context.pubsub.publish('NEW_LINK', newLink);  // not important for now
 
   return newLink;
 }
